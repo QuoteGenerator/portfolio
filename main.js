@@ -10,6 +10,8 @@ document.addEventListener("DOMContentLoaded", function () {
     const aboutMe = document.getElementsByClassName("aboutMeContent")[0];
     const credits = document.getElementsByClassName("credits")[0];
 
+    const githubButton = document.getElementById("github");
+
     projectsButton.addEventListener("click", function () {
         mainMenu.style.display = "none";
         projects.style.display = "flex";
@@ -33,4 +35,9 @@ document.addEventListener("DOMContentLoaded", function () {
             credits.style.display = "none";
         });
     }
+
+
+    githubButton.addEventListener('click', function () {
+        window.open('https://github.com/QuoteGenerator', '_blank');
+    });
 });
